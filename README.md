@@ -10,3 +10,6 @@ Nmap Tool
 
 TCP SYN (Stealth) Scan (-sS) SYN scan is the default and most popular scan option for good reason. It can be performed quickly, scanning thousands of ports per second on a fast network not hampered by intrusive firewalls. SYN scan is relatively unobtrusive and stealthy, since it never completes TCP connections. It also works against any compliant TCP stack rather than depending on idiosyncrasies of specific platforms **-T4 More faster scan** nmap -sS -T4 192.168.1.1
 
+Nikto Tool
+## Scan web server scanner which performs comprehensive tests against web servers for multiple items, including over 6700 potentially dangerous files/programs,
+nikto -C all - host http:// 
