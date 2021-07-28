@@ -13,3 +13,14 @@ TCP SYN (Stealth) Scan (-sS) SYN scan is the default and most popular scan optio
 Nikto Tool
 ## Scan web server scanner which performs comprehensive tests against web servers for multiple items, including over 6700 potentially dangerous files/programs,
 nikto -C all - host http:// 
+
+
+Hydra
+The next tool we will use is Hydra, a powerful login cracker which is very fast and supports a number of different protocols. To show the help and some basic usage options, simply type hydra in the terminal. 
+hydra -L users.txt -P passwords.txt ssh://IP -t 4
+The -L flag, which specifies a list of login names.
+The -P flag, which specifies a list of passwords.
+ssh://172.16.1.102 — our target and protocol.
+The -t flag set to 4, which sets the number of parallel tasks to run.
+
+hydra -l <username> -P /usr/share/wordlists/rockyou.txt -s 22 -f -vV <ip> ssh
