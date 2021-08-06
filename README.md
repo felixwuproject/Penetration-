@@ -24,3 +24,6 @@ ssh://172.16.1.102 — our target and protocol.
 The -t flag set to 4, which sets the number of parallel tasks to run.
 
 hydra -l <username> -P /usr/share/wordlists/rockyou.txt -s 22 -f -vV <ip> ssh
+
+## WIFI Windows cmd ##  
+Show all the user connect in your network  >netsh wlan show profile
