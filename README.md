@@ -27,3 +27,14 @@ hydra -l <username> -P /usr/share/wordlists/rockyou.txt -s 22 -f -vV <ip> ssh
 
 ## WIFI Windows cmd ##  
 Show all the user connect in your network  >netsh wlan show profile
+
+  
+  ##WPScan 
+WordPress Security Scanner
+The WPScan CLI tool uses our database of 23,180 WordPress vulnerabilities.
+  Enumerating usernames
+wpscan --url https://target.tld/ --enumerate u
+Enumerating a range of usernames
+
+wpscan --url https://target.tld/ --enumerate u1-100
+** replace u1-100 with a range of your choice.
