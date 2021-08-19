@@ -28,7 +28,7 @@ hydra -l <username> -P /usr/share/wordlists/rockyou.txt -s 22 -f -vV <ip> ssh
 ## WIFI Windows cmd ##  
 Show all the user connect in your network  >netsh wlan show profile
 
-  
+------------------------------------------------------------------------------------------------------  
   ##WPScan 
 WordPress Security Scanner
 The WPScan CLI tool uses our database of 23,180 WordPress vulnerabilities.
@@ -38,3 +38,10 @@ Enumerating a range of usernames
 
 wpscan --url https://target.tld/ --enumerate u1-100
 ** replace u1-100 with a range of your choice.
+  
+-----------------------------------------------------------------------------------
+tcpdump - dump traffic on a network  
+Tcpdump prints out a description of the contents of packets on a network interface that match the Boolean expression; 
+  tcpdump -D  ##Print the list of the network interfaces available on the system 
+  tcpdump -i any -C 5 ##Set the time stamp type for the capture to tstamp_type. limit the time of capture
+  tcpdump -i any -c5 icmp ##To print all ICMP packets only filter the rest 
