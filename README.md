@@ -42,6 +42,9 @@ wpscan --url https://target.tld/ --enumerate u1-100
 -----------------------------------------------------------------------------------
 tcpdump - dump traffic on a network  
 Tcpdump prints out a description of the contents of packets on a network interface that match the Boolean expression; 
+ 
   tcpdump -D  ##Print the list of the network interfaces available on the system 
+  
   tcpdump -i any -C 5 ##Set the time stamp type for the capture to tstamp_type. limit the time of capture
+ 
   tcpdump -i any -c5 icmp ##To print all ICMP packets only filter the rest 
